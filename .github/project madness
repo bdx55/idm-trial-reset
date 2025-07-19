@@ -1,0 +1,104 @@
+print("Hello traveller, welcome to the land of dreams, where reality is a dream that will never come true, i'll be escorting you in this journey, until something happens to you that is, now before we introduce you to the world and rules, shall we get to know what should we write on the tomb stone.")
+
+name = input('Give us thine name: ')
+print("Aha, welcome " + name + ", this shall be an amazing journey....... hopefully at least.")
+print("Now let us introduce you to your mission. It's actually pretty simple: survive! That's it.")
+print("What's the prize you say? Well, of course your life. What more precious than that? Anyhow, now let's see what do we have here.")
+
+weapon = int(input("""Pick a weapon:
+1 - If you're a strength guy, pick the Great Sword
+2 - If you're a slick guy, pick the Scythe
+3 - If you think you deserve to die, pick the Magic
+4 - Yes, the Sword! What, you thought you can't be a knight in this one? Pffff, newbies
+>>> """))
+
+if weapon == 1:
+    weapon = 'Great Sword'
+elif weapon == 2:
+    weapon = 'Scythe'
+elif weapon == 3:
+    print('You suck man!')
+    weapon = 'Magic'
+elif weapon == 4:
+    print("I like ya, not that much though.")
+    weapon = 'Sword'
+else:
+    print("We don't have such a number in the choices.")
+    print("Are you just testing if this is a good code? Oops, broke a wall here.")
+    weapon = 'Nothing'
+
+print(f"Your weapon of choice is {weapon}")
+print("don't worry, it won't be of a use to your corpse, any way, let's see, what do we have her, aha, a forest, the perfect starting place for an adventure full with the smell of death, buckle up.")
+print("you aproach a fire in the midst of the forest you can choose to either sit by the fire and rest or continue your journey, what do you choose? (rest 1/journey 2): ")
+
+choice1= int(input(">>> "))
+if choice1 == 1:
+    print("You sit by the fire, enjoying the warmth and the crackling sound of the flames. You feel a bit safer here, but you know you can't stay forever, not that the sounds of a bunch of goblins approaching would let you.")
+    print("You hear the goblins laughing and chattering, their eyes glowing in the dark. They seem to be planning something sinister.")
+    print(f"""you can be smart about this, knowing that brave man are mostly dumb, while "the so called cowards" are the ones wo live to tell the stoy, or just ignore all that and use the {weapon} to fight them, what do you choose? (smart 1/fight 2): """)
+    choice2 = int(input(">>> "))
+    if choice2 == 1:
+        print("You decide to be smart about this. You quietly observe the goblins, trying to understand their plans. You notice that they are arguing over a treasure map.")
+        print("You wait for the right moment and then you sneak up on them, taking the map and escaping before they notice.")
+        print("You now have a treasure map! This could lead you to great riches or more trouble, who knows?")
+        print("maybe you shouldnt think about that while theyre chasing you, so you realize you have to burn some calories and start running.")
+        print("You run through the forest, dodging trees and jumping over roots. The goblins are hot on your heels, but you manage to lose them in the dense underbrush.")
+        print(" now it seems like you can rest for maybe 3 seconds or so, because now that youre, out of the woods(pun intended), you can see a village in the distance.")
+        print("You approach the village, hoping to find some shelter and maybe some allies. But as you get closer, you realize that the village is in ruins, burned down and abandoned.")
+        print("You feel a chill run down your spine. What happened here? Was it the goblins? Or something worse?")
+        print("you dont feel like finding out, so you decide to leave the village and continue your journey, but not before taking a few supplies from the ruins, wierdly enough, you find a few potions and some food, maybe the goblins or whatever did this is maniac of some sort, or maybe....... you stop mind wandering and focus on the task at hand, if oonly that was easy though, but these sounds of a living village are too tempting, you decide to go in and see if anyone is left.")
+        print("allthough you know that this is a bad idea, you can't resist the temptation of finding survivors or maybe even some treasure, but you can")
+        print("you search for hours, to no avail, but the sounds, keep flickering behind youre ears, you know that you have to find the source of these sounds, so you keep searching, until you find a wierd lake in the middle of the village.")
+        print("The lake is calm and still, but you can see strange shapes moving beneath the surface. You feel a sense of dread wash over you.")
+        print("You can either investigate the lake or leave it alone, what do you choose? (investigate 1/leave 2): ")
+        choice3 = int(input(">>> "))
+        if choice3 == 1:
+            print("You decide to investigate the lake. You wade into the water, feeling the coldness seep into your bones. As you reach the center, you see a figure rising from the depths.")
+            print("It's an entire world of dreams, a place where reality is a dream that will never come true. You realize that you have stumbled upon a portal to another realm, people are living here, having a blast, is this really the end of your journey?, you wonder.")
+            print("you enter, start exploring, but.... before you can say the w in wow, you see a portal, two modern-like knights")
+            print("showing their absoulotely astonishing sowrds, you realize, that these are some sort of dream cops, and they are not happy to see you here.")
+            print("halt! they shout, you are not allowed to be here, this is not your realm, how did you enter here.")
+            print("it seems like just a big misunderstanding, you try to explain that you were just exploring, but, unfortunately, they don't seem to be willing to just let you go back, apearntly, letting you go back may cause some sort of disturbance in the dream realm, and they can't risk that.")
+            print("we can of course, give you to choices to deal with these two, you can either fight them or try to reason with them, what do you choose? (fight 1/reason 2):, pfff just kidding, you die your journey ends here, brave but foolish warrior.")
+            print(" yes we didnt have to write that, but we did, so what, sue us, oh wait you can't, you're dead.")
+        elif choice3 == 2:
+            print("You decide to leave the lake alone. You feel that whatever is in there is not meant for you to find out. You turn away and continue your journey.")
+            print("As you walk away, you hear a strange sound behind you, but when you look back, the lake is calm and still, as if nothing ever happened.")
+            print("You shrug it off and keep moving forward, hoping to find something more interesting than a creepy lake.")
+            print("Your journey continues, but you can't shake the feeling that you missed something important.")
+            print("anyway, you keep walking, until you reach a clearing in the forest, where you see a group of goblins gathered around a fire.")
+            print("after running for a while, you feel like you burnt enough calories, so now you can fight better, especialy, that they are not aware of your presence, you can either sneak up on them and attack or just charge in and fight them head-on, what do you choose? (sneak 1/charge 2): ")
+            choice4 = int(input(">>> "))
+            if choice4 == 1: 
+                print(f"you obliterate them with your {weapon}, they never saw it coming, you feel like a true warrior, but then you realize that you are just a coward who can't face his fears, and you start to question your choices.")
+                print("then you realize youre not in an anime, and you just killed a bunch of goblins, so you shrug it off and keep moving forward.")
+                print("yada yada, you kill a beast, marry a princess, have a few kids, and live happily ever after, the end.")
+            elif choice4 == 2:
+                print(f"You decide to charge in with your {weapon}. You swing it wildly, taking down goblins left and right. They are caught off guard and you manage to defeat them quickly, nahh just kidding, they are too many, and you are overwhelmed.")
+                print("You fight bravely, but in the end, you are outnumbered and defeated.")
+                print("Your journey ends here, brave but foolish warrior.")
+            else:print("this is not stanely parable, you can't just type a number that is not in the choices, you know, this is not a good code, but we are trying to make it better, so please, just follow the rules.")
+        else:print("iam tired of you guys, go play angry birds or something, you can't just type a number that is not in the choices, you know, this is not a good code, but we are trying to make it better, so please, just follow the rules.")
+
+
+    elif choice2 == 2:
+        print(f"You decide to fight them with your {weapon}. You charge at the goblins, swinging your weapon wildly.")
+        print("but then you realize they are just too many, and you are overwhelmed.")
+        print("You fight bravely, but in the end, you are outnumbered and defeated.")
+        print("Your journey ends here, brave but foolish warrior.")
+    else:
+        print("You can't just type a number that is not in the choices, you know, this is not a good code, but we are trying to make it better, so please, just follow the rules.")
+        print("You are not allowed to choose this option, you have to choose either smart or fight, not some random number that is not in the choices.")
+        print("Your journey ends here, brave but foolish warrior.")    
+elif choice1 == 2:
+    print("continuing your journey, you feel a sense of unease. The forest is dark and foreboding, and you can't shake the feeling that something is watching you.")
+    print("you ealize that you are not alone, and you start to hear strange noises from everywhere , or is this your brain making them, because youre so tired.")
+    print("you cant continue this string of thoughts, because you are aproached of you a somewhat dark figure")
+    print(""" "you cant move forward more than this", the figure says, "one more step and the forest will punish thee, turn back, i am here to warn you," """) 
+    print("you feel a chill run down your spine, you know that you have to turn back, but you also feel like you have to keep going, to find out what lies ahead.")
+    print("but then you realize that the coder is having a hard time writing this, so you decide to just turn back and go home.")
+    print("you turn back and leave the forest, feeling a sense of relief. You know that you made the right choice, even if it was a hard one.")
+    print("you go home, have a nice cup of tea, and forget about the forest and the dark figure, but you also know that you will never forget this journey, and that you will always be a brave warrior, even if you didn't fight any goblins or monsters.")
+    print("you cant continue this --- IGNORE ---")
+else: print("You can't just type a number that is not in the choices, you know, this is not a good code, but we are trying to make it better, so please, just follow the rules.")
+print("Thank you for playing, brave warrior. Your journey may have ended here, but your spirit will live on in the land of dreams, just kidding again, you juzt wasted your precious time dude.")
